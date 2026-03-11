@@ -138,10 +138,10 @@ Evaluation results based on 100 samples of Chinese cultural symbols:
 
 | Model | Visual Perception | Common Knowledge | Semantic Understanding | Cultural Sensitivity | Average Score |
 | ----- | ----------------- | ---------------- | ---------------------- | -------------------- | ------------- |
-| Qwen  | 4.64              | **4.28**         | **4.54**               | **4.71**             | **4.54**      |
+| Qwen  | **4.64**          | **4.28**         | **4.54**               | **4.71**             | **4.54**      |
 | ERNIE | 4.50              | 4.08             | 4.23                   | 4.26                 | 4.27          |
 | GLM   | 3.93              | 3.20             | 3.88                   | 3.74                 | 3.69          |
-| Spark | **4.71**          | 3.40             | 3.77                   | 3.80                 | 3.92          |
+| Spark | 4.21              | 3.40             | 3.77                   | 3.80                 | 3.80          |
 
 ## 🤝 Contribution Guidelines
 
