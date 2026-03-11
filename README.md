@@ -14,7 +14,7 @@ CultureEval is an automated toolkit focused on evaluating the ability of multimo
 - Promote research on AI's cultural adaptability.
 
 ## ✨ Features
-![Features](imgs/imgs/picture1.jpg)
+![Features](imgs/picture1.jpg)
 ### Supported Models
 
 | Model        | Manufacturers | API Protocol      | Features                       |
