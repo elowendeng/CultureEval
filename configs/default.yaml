@@ -1,0 +1,55 @@
+models:
+  # Qwen Series Models
+  qwen:
+    type: "api"
+    base_url: 'DASHSCOPE_BASE_URL'
+    api_key: 'DASHSCOPE_API_KEY'
+    model_name: "qwen-vl-max"
+  # ERNIE Series Models
+  ernie:
+    type: "api"
+    base_url: 'BAIDU_BASE_URL'
+    api_key: 'BAIDU_API_KEY'
+    model_name: "ernie-4.5-turbo-vl"
+  # GLM Series Models
+  glm:
+    type: "api"
+    api_key: 'GLM_API_KEY'
+    model_name: "glm-4v-plus-0111"
+  # Spark Series Models
+  spark:
+    type: "api"
+    app_id: "35007571"
+    api_key: 'SPARK_API_KEY'
+    api_secret: 'SPARK_API_SECRET'
+    model_name: "spark-vision"
+
+judge:
+  type: "api"
+  base_url: 'DASHSCOPE_BASE_URL'
+  api_key: 'DASHSCOPE_API_KEY'
+  model_name: "qwen-plus"
+
+benchmark:
+  path: "data/culture_bench.json"
+
+output_dir: "outputs"
+
+judge_prompt: |
+  你是一个中国文化专家。请评估以下模型输出是否准确、完整且文化敏感。
+  评分标准（1-5分）：
+  1: 完全错误或严重误解
+  2: 部分正确但有明显错误
+  3: 基本正确但不够深入
+  4: 准确且有文化洞察
+  5: 完美无缺，体现深厚文化理解
+
+  输出格式（严格JSON）：
+  {"score": 4, "explanation": "简要说明"}
+
+# "视觉感知" "常识知识" "语义理解" "文化敏感性"
+dimensions:
+  - "Visual Perception"
+  - "Common Knowledge"
+  - "Semantic Understanding"
+  - "Cultural Sensitivity"

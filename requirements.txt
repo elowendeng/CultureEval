@@ -1,0 +1,13 @@
+openai
+transformers
+torch
+Pillow
+PyYAML
+tqdm
+pillow
+python-dotenv
+matplotlib
+seaborn
+pandas
+requests
+websocket-client

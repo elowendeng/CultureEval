@@ -1,0 +1,36 @@
+# .gitignore
+
+# Environment variables
+.env
+.env.local
+*.env
+
+# Python caching
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Output directory (do not submit generated reports and results)
+outputs/
+*.png
+*.html
+*.json
+!configs/*.json  # Preserve JSON in configuration files
+
+# Test images and data (examples only)
+data/images/*.jpg
+data/images/*.jpeg
+data/images/*.png
+!data/images/example.jpg  # Keep one example image
+
+# IDE configuration
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# log files
+*.log
