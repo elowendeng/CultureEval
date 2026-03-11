@@ -14,7 +14,7 @@ CultureEval is an automated toolkit focused on evaluating the ability of multimo
 - Promote research on AI's cultural adaptability.
 
 ## ✨ Features
-
+![Features](imgs/imgs/picture1.jpg)
 ### Supported Models
 
 | Model        | Manufacturers | API Protocol      | Features                       |
@@ -94,11 +94,11 @@ python main.py
 After execution, the following results will be generated in the `outputs/` directory:
 
 ### 1. Model comparison chart
-![模型对比](outputs/model_comparison.png)
+![Model comparison](imgs/model_comparison.png)
 *Comparison of average scores of each model across different dimensions*
 
 ### 2. Heat map
-![热力图](outputs/heatmap.png)
+![Heat map](imgs/heatmap.png)
 *Model × Dimension Score Distribution Visualization*
 
 ### 3. HTML Report
@@ -130,6 +130,7 @@ CultureEval/
 ├── LIECNSE
 └── requirements.txt 			# Dependency list
 ```
+![Structure](imgs/picture2.jpg)
 
 ## 📈 Experimental Results
 
