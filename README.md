@@ -18,7 +18,7 @@ CultureEval is an automated toolkit focused on evaluating the ability of multimo
 ### Supported Models
 
 | Model        | Manufacturers | API Protocol      | Features                       |
-| ------------ | ------------- | ----------------- | ------------------------------ |
+| :----------: | :-----------: | :---------------: | :----------------------------: |
 | Qwen-VL      | Alibaba Cloud | OpenAI compatible | Best cultural sensitivity      |
 | ERNIE-VL     | Baidu         | Qianfan API       | Excellent visual perception    |
 | GLM-4V       | Zhipu AI      | Zhipu API         | Semantic understanding balance |
@@ -55,10 +55,14 @@ CultureEval is an automated toolkit focused on evaluating the ability of multimo
 git clone https://github.com/elowendeng/CultureEval.git
 cd CultureEval
 
-# 2. Install dependencies
+# 2. Creating a virtual environment
+conda create -n culture_eval python=3.10 -y
+conda activate culture_eval
+
+# 3. Install dependencies
 pip install -r requirements.txt
 
-# 3. Configure API key
+# 4. Configure API key
 cp .env.example .env
 # Edit the .env file and enter your API key.
 ```
@@ -137,7 +141,7 @@ CultureEval/
 Evaluation results based on 100 samples of Chinese cultural symbols:
 
 | Model | Visual Perception | Common Knowledge | Semantic Understanding | Cultural Sensitivity | Average Score |
-| ----- | ----------------- | ---------------- | ---------------------- | -------------------- | ------------- |
+| :---: | :---------------: | :--------------: | :--------------------: | :------------------: | :-----------: |
 | Qwen  | **4.64**          | **4.28**         | **4.54**               | **4.71**             | **4.54**      |
 | ERNIE | 4.50              | 4.08             | 4.23                   | 4.26                 | 4.27          |
 | GLM   | 3.93              | 3.20             | 3.88                   | 3.74                 | 3.69          |
