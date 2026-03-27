@@ -180,8 +180,8 @@ def test_api_connection():
     load_environment()
     try:
         api_key = get_env_variable('SPARK_API_KEY')
-        app_id = "35007571"
-        api_secret = "MTEwNDg4Nzg3OTI0NzgwNzQxMTEzYTkz"
+        app_id = "your app_id"
+        api_secret = "your api_secret"
         print("Verification credentials...")
         print(f"   APP_ID: {app_id}")
         print(f"   API_KEY: {api_key[:8]}...")
@@ -189,7 +189,7 @@ def test_api_connection():
         # Initialize client
         client = SparkImageUnderstanding(app_id, api_key, api_secret)
         # Test image path
-        image_path = '/home/ubuntu/CultureEval/data/images/001.jpg'
+        image_path = 'your_path/CultureEval/data/images/001.jpg'
         if not os.path.exists(image_path):
             print(f"The image file does not exist: {image_path}")
             # Try creating a test image
