@@ -7,7 +7,7 @@ def test_api():
     load_environment()
     key = get_env_variable('GLM_API_KEY')
     client = ZhipuAiClient(api_key=key)
-    path = '/home/ubuntu/CultureEval/data/images/001.jpg'
+    path = 'your_path/CultureEval/data/images/001.jpg'
     question = '请用一句话描述这张图片'
     image_data = _image_to_base64_data(path)
     response = client.chat.completions.create(
