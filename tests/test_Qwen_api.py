@@ -44,7 +44,7 @@ def test_fixed_format(key, url, name1, name2):
     # Test 2: Multimodal Formats (Image + Text)
     print("\nTesting multimodal formats...")
     try:
-        img_data = _image_to_base64_data('/home/ubuntu/CultureEval/data/images/001.jpg')
+        img_data = _image_to_base64_data('your_path/CultureEval/data/images/001.jpg')
         messages = [
             {
                 "role": "user",
