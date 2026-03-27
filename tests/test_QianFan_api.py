@@ -80,7 +80,7 @@ if __name__ == '__main__':
     base_url = get_env_variable('BAIDU_BASE_URL')
     # ernie-4.5-turbo-vl  qianfan-check-vl  llama-4-scout-17b-16e-instruct
     model_name = "ernie-4.5-turbo-vl"
-    path = '/home/ubuntu/CultureEval/data/images/001.jpg'
+    path = 'your_path/CultureEval/data/images/001.jpg'
     text = '请用一句话描述这张图片'
     print(f"Configuration check:")
     print(f"   API Key: {api_key[:10]}...")
