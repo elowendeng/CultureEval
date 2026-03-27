@@ -60,12 +60,15 @@ conda create -n culture_eval python=3.10 -y
 conda activate culture_eval
 
 # 3. Install dependencies
+pip3 install torch torchvision
 pip install -r requirements.txt
 
 # 4. Configure API key
 cp .env.example .env
 # Edit the .env file and enter your API key.
 ```
+
+The command to install PyTorch can be found on the webpage: [Get Started](https://pytorch.org/get-started/locally/). Before that, you need to run the command: `nvcc --version` to check the CUDA version.
 
 ### Prepare assessment data
 
@@ -124,6 +127,12 @@ CultureEval/
 │ ├── data_loader.py 			# Data loading
 │ ├── evaluator.py 				# Evaluation engine
 │ └── model_interface.py 		# Model interface
+├── tests 						# Test files
+│ ├── pre_process.py 			# Preprocessed files
+│ ├── test_GLM_api.py
+│ ├── test_QianFan_api.py
+│ ├── test_Qwen_api.py
+│ └── test_Spark_api.py
 ├── utils/ 						# Utility modules
 │ ├── judge.py 					# LLM judge
 │ └── visualization.py 			# Visualization
@@ -164,12 +173,3 @@ Project Link: [https://github.com/elowendeng/CultureEval](https://github.com/elo
 ## 🙏 Acknowledgements
 
 Appreciate for the assistance provided by the "2025 - CISC7021 Applied Natural Language Processing" course at the University of Macau!
-
-
-
-
-
-
-
-
-
