@@ -1,7 +1,7 @@
 [
   {
     "id": "c001",
-    "image_path": "/home/ubuntu/CultureEval/data/images/001.jpg",
+    "image_path": "your_path/CultureEval/data/images/001.jpg",
     "question": "图中表演的是什么中国传统艺术？它在哪个节日最常见？",
     "dimension": "视觉感知",
     "reference": "舞龙，春节或元宵节，象征吉祥、驱邪、祈求丰收。"
