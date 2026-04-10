@@ -3,17 +3,17 @@
 **The first automated evaluation tool for multimodal large-scale models focusing on the recognition of Chinese cultural symbols.**
 
 
-## 📖 Project Overview
+## Project Overview
 
 CultureEval is an automated toolkit focused on evaluating the ability of multimodal large language models (MLLMs) to understand Chinese cultural symbols. Addressing the issue that existing MLLMs are primarily trained on Western cultural data, we have constructed a systematic evaluation framework.
 
-### 🎯 Core Objectives
+### Core Objectives
 - Fill the gaps in the assessment of Chinese cultural understanding.
 - Provide a reproducible automated assessment process.
 - Support cross-model comparisons.
 - Promote research on AI's cultural adaptability.
 
-## ✨ Features
+## Features
 ![Features](imgs/picture1.jpg)
 ### Supported Models
 
@@ -46,7 +46,7 @@ CultureEval is an automated toolkit focused on evaluating the ability of multimo
 
 - Export raw JSON data.
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Environment Setup
 
@@ -96,7 +96,7 @@ I have also provided my dataset, the link is [Google Drive](https://drive.google
 python main.py
 ```
 
-## 📊 Results Display
+## Results Display
 
 After execution, the following results will be generated in the `outputs/` directory:
 
@@ -113,7 +113,7 @@ After execution, the following results will be generated in the `outputs/` direc
 outputs/report.html  # Open in your browser to view detailed results
 ```
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 CultureEval/
@@ -145,7 +145,7 @@ CultureEval/
 ```
 ![Structure](imgs/picture2.jpg)
 
-## 📈 Experimental Results
+## Experimental Results
 
 Evaluation results based on 100 samples of Chinese cultural symbols:
 
@@ -156,20 +156,20 @@ Evaluation results based on 100 samples of Chinese cultural symbols:
 | GLM   | 3.93              | 3.20             | 3.88                   | 3.74                 | 3.69          |
 | Spark | 4.21              | 3.40             | 3.77                   | 3.80                 | 3.80          |
 
-## 🤝 Contribution Guidelines
+## Contribution Guidelines
 
 Contributions in all forms are welcome!
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📧 Contact Information
+## Contact Information
 
 Project Lead: Nan Deng (cbhsfmf0206@gmail.com)
 
 Project Link: [https://github.com/elowendeng/CultureEval](https://github.com/elowendeng/CultureEval)
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 Appreciate for the assistance provided by the "2025 - CISC7021 Applied Natural Language Processing" course at the University of Macau!
