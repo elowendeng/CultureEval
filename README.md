@@ -46,6 +46,38 @@ CultureEval is an automated toolkit focused on evaluating the ability of multimo
 
 - Export raw JSON data.
 
+## Project Structure
+
+```
+CultureEval/
+├── configs/ 					# Configuration files
+│ └── default.yaml 				# Default configuration
+├── data/ 						# Evaluation data
+│ ├── images/ 					# Test images
+│ └── culture_bench.json 		# Evaluation benchmark
+├── outputs/ 					# Output results (ignore by git)
+├── src/ 						# Core source code
+│ ├── data_loader.py 			# Data loading
+│ ├── evaluator.py 				# Evaluation engine
+│ └── model_interface.py 		# Model interface
+├── tests 						# Test files
+│ ├── pre_process.py 			# Preprocessed files
+│ ├── test_GLM_api.py
+│ ├── test_QianFan_api.py
+│ ├── test_Qwen_api.py
+│ └── test_Spark_api.py
+├── utils/ 						# Utility modules
+│ ├── judge.py 					# LLM judge
+│ └── visualization.py 			# Visualization
+├── .env.example 				# Environment variable example
+├── .gitignore 					# Git ignored file
+├── main.py 					# Main program entry point
+├── README.md 					# Project description
+├── LIECNSE
+└── requirements.txt 			# Dependency list
+```
+![Structure](imgs/picture2.jpg)
+
 ## Quick Start
 
 ### Environment Setup
@@ -112,38 +144,6 @@ After execution, the following results will be generated in the `outputs/` direc
 ```bash
 outputs/report.html  # Open in your browser to view detailed results
 ```
-
-## Project Structure
-
-```
-CultureEval/
-├── configs/ 					# Configuration files
-│ └── default.yaml 				# Default configuration
-├── data/ 						# Evaluation data
-│ ├── images/ 					# Test images
-│ └── culture_bench.json 		# Evaluation benchmark
-├── outputs/ 					# Output results (ignore by git)
-├── src/ 						# Core source code
-│ ├── data_loader.py 			# Data loading
-│ ├── evaluator.py 				# Evaluation engine
-│ └── model_interface.py 		# Model interface
-├── tests 						# Test files
-│ ├── pre_process.py 			# Preprocessed files
-│ ├── test_GLM_api.py
-│ ├── test_QianFan_api.py
-│ ├── test_Qwen_api.py
-│ └── test_Spark_api.py
-├── utils/ 						# Utility modules
-│ ├── judge.py 					# LLM judge
-│ └── visualization.py 			# Visualization
-├── .env.example 				# Environment variable example
-├── .gitignore 					# Git ignored file
-├── main.py 					# Main program entry point
-├── README.md 					# Project description
-├── LIECNSE
-└── requirements.txt 			# Dependency list
-```
-![Structure](imgs/picture2.jpg)
 
 ## Experimental Results
 
